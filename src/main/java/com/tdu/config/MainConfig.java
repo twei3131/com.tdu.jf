@@ -36,7 +36,7 @@ public class MainConfig extends JFinalConfig
     @Override
     public void configRoute(Routes me)
     {
-        me.add("/", UserController.class);
+        me.add("/user", UserController.class,"/user");
     }
 
     @Override

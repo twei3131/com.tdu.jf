@@ -10,4 +10,10 @@ public class UserController extends Controller
         User user = User.dao.findById(25);
         renderJson(user);
     }
+
+    public void toUser()
+    {
+        setAttr("user", "陶伟");
+        render("/user/user.jsp");
+    }
 }
