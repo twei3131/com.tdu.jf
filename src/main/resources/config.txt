@@ -1,0 +1,5 @@
+# config
+jdbcUrl = jdbc:mysql://127.0.0.1:3306/ssmTest?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+user = root
+password = twei3131
+devMode = true
