@@ -28,6 +28,7 @@ dependencies {
     compile group: 'com.jfinal', name: 'cos', version: '2017.5'
     compile group: 'redis.clients', name: 'jedis', version: '2.7.2'
     compile group: 'org.apache.commons', name: 'commons-pool2', version: '2.3'
+    compile group: 'commons-dbutils', name: 'commons-dbutils', version: '1.7'
     compile group: 'log4j', name: 'log4j', version: '1.2.16'
     testCompile group: 'org.slf4j', name: 'slf4j-nop', version: '1.2'
     testCompile group: 'org.objenesis', name: 'objenesis', version: '2.1'
