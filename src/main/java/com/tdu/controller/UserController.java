@@ -16,4 +16,9 @@ public class UserController extends Controller
         setAttr("user", "陶伟");
         render("/user/user.jsp");
     }
+
+    public void addUser()
+    {
+
+    }
 }
