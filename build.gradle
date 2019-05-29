@@ -112,6 +112,8 @@ dependencies {
     compile group: 'org.apache.commons', name: 'commons-configuration2', version: '2.5'
     //email
     compile group: 'org.apache.commons', name: 'commons-email', version: '1.5'
+    //jstl
+    compile group: 'jstl', name: 'jstl', version: '1.2'
 }
 sourceSets.main.resources.srcDirs = ["src/main/java","src/main/resources"]
 war{
