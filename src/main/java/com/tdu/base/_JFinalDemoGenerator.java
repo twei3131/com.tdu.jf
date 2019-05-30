@@ -20,8 +20,8 @@ public class _JFinalDemoGenerator
 	public static void main(String[] args)
 	{
 		final String path = "/Users/twei3131/IdeaProjects/com.tdu.jf/";
-		String baseModelPackageName = path + "com.tdu.model.base";
-		String baseModelOutputDir = "src/main/java/com/tdu/model/base";
+		String baseModelPackageName = "com.tdu.model.base";
+		String baseModelOutputDir = path + "src/main/java/com/tdu/model/base";
 		
 		String modelPackageName = "com.tdu.model";
 		String modelOutputDir = baseModelOutputDir + "/..";
