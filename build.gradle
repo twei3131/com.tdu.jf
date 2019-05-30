@@ -41,6 +41,8 @@ dependencies {
     compile group: 'log4j', name: 'log4j', version: '1.2.16'
     //slf4j
     testCompile group: 'org.slf4j', name: 'slf4j-nop', version: '1.2'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.8.0-beta4'
+    testCompile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.8.0-beta4'
 
     testCompile group: 'org.objenesis', name: 'objenesis', version: '2.1'
     compile group: 'org.javassist', name: 'javassist', version: '3.19.0-GA'
