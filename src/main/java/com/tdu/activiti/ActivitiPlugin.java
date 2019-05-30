@@ -75,7 +75,7 @@ public class ActivitiPlugin implements IPlugin
         isStarted = true;
         //开启流程引擎
         logger.info("启动流程引擎.......");
-
+        ActivitiGraph activitiGraph = new ActivitiGraph();
         return isStarted;
     }
 }
