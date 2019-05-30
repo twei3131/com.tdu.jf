@@ -10,6 +10,7 @@ import com.jfinal.plugin.redis.RedisPlugin;
 import com.jfinal.render.ViewType;
 import com.jfinal.template.Engine;
 import com.jfinal.plugin.druid.DruidPlugin;
+import com.tdu.activiti.ActivitiPlugin;
 import com.tdu.controller.UserController;
 import com.tdu.model._MappingKit;
 
@@ -55,6 +56,8 @@ public class MainConfig extends JFinalConfig
         me.add(arp);
         RedisPlugin redis = new RedisPlugin("rcache", "localhost");
         me.add(redis);
+        ActivitiPlugin ap = new ActivitiPlugin();
+        me.add(ap);
     }
 
     public static DruidPlugin createDruidPlugin()

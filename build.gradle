@@ -114,6 +114,12 @@ dependencies {
     compile group: 'org.apache.commons', name: 'commons-email', version: '1.5'
     //jstl
     compile group: 'jstl', name: 'jstl', version: '1.2'
+    //Activiti
+    compile group: 'org.activiti', name: 'activiti-engine', version: '7.1.0.M1'
+    compile group: 'org.activiti', name: 'activiti-bpmn-converter', version: '7.1.0.M1'
+    compile group: 'org.activiti', name: 'activiti-bpmn-model', version: '7.1.0.M1'
+    testCompile group: 'org.activiti', name: 'activiti-bpmn-layout', version: '7.1.0.M1'
+    compile group: 'org.activiti', name: 'activiti-json-converter', version: '7.1.0.M1'
 }
 sourceSets.main.resources.srcDirs = ["src/main/java","src/main/resources"]
 war{
@@ -121,6 +127,7 @@ war{
 }
 group 'com.tdu.jf'
 version '1.0-SNAPSHOT'
+sourceSets.main.resources.srcDirs = ["src/main/java","src/main/resources"]
 
 sourceCompatibility = 1.8
 

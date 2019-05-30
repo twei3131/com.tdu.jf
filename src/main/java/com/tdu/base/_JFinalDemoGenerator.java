@@ -28,8 +28,9 @@ public class _JFinalDemoGenerator
 		
 		Generator generator = new Generator(getDataSource(), baseModelPackageName, baseModelOutputDir, modelPackageName, modelOutputDir);
 		generator.setDialect(new MysqlDialect());
+		generator.setMetaBuilder(new _MetaBuilder(getDataSource()));
 		generator.setGenerateChainSetter(true);
-		generator.addExcludedTable("adv");
+		//generator.addExcludedTable("adv");
 		generator.setGenerateDaoInModel(true);
 		generator.setGenerateDataDictionary(true);
 		generator.setRemovedTableNamePrefixes("t_");
