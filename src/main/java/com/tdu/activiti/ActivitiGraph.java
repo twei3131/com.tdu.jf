@@ -13,15 +13,5 @@ public class ActivitiGraph extends ActivitiGraphUtils
 		.name("请假")
 		.addClasspathResource("/com/tdu/processes/vacate.bpmn")
 		.deploy();
-
-        try
-        {
-            convertToModel(ActivitiPlugin.processEngine, "Urge:4:17504");
-            createModel(ActivitiPlugin.processEngine);
-        }
-        catch (Exception exp)
-        {
-           System.out.println("error");
-        }
     }
 }
