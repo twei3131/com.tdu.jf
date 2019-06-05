@@ -3,6 +3,7 @@ package com.tdu.controller;
 import com.google.gson.Gson;
 import com.jfinal.core.Controller;
 import com.tdu.model.User;
+import com.tdu.model.Usr;
 import org.activiti.engine.HistoryService;
 import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.ProcessEngines;
@@ -53,4 +54,12 @@ public class UserController extends Controller
         renderText("Done! " + json);
     }
 
+    public void getUser()
+    {
+        String id = getAttr("id");
+        List<Usr> list = Usr.dao.find("select * from usr");
+        setAttr("user", list);
+        setAttr("idIndex", id);
+        renderFreeMarker("/user/user3.ftl");
+    }
 }
