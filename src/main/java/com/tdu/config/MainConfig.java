@@ -30,7 +30,7 @@ public class MainConfig extends JFinalConfig
         me.setDevMode(true);
         me.setBaseUploadPath(PathKit.getWebRootPath() + "/upload");
         me.setMaxPostSize(2147483647);
-        me.setViewType(ViewType.JSP);
+        me.setViewType(ViewType.FREE_MARKER);
         me.setUrlParaSeparator("&");
     }
 

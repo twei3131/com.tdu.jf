@@ -23,13 +23,15 @@ public class UserController extends Controller
     public void index()
     {
         User user = User.dao.findById(25);
-        renderJson(user);
+        setAttr("user", user);
+        renderFreeMarker("/user/user.ftl");
+        //renderJson(user);
     }
 
     public void toUser()
     {
         setAttr("user", "陶伟");
-        render("/user/user.jsp");
+        render("/user/user2.ftl");
     }
 
     public void testAct()
