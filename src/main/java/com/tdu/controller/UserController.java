@@ -56,10 +56,12 @@ public class UserController extends Controller
 
     public void getUser()
     {
-        String id = getAttr("id");
-        List<Usr> list = Usr.dao.find("select * from usr");
+        String id = getPara("id");
+        List<Usr> list = Usr.dao.find("select * from usr where id = ?", id);
+        Map<String, Object> map = new HashMap<>();
         setAttr("user", list);
-        setAttr("idIndex", id);
+        setAttr("id", id);
+        setAttr("name", "Mr Tao");
         renderFreeMarker("/user/user3.ftl");
     }
 }

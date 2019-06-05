@@ -4,7 +4,7 @@
 </head>
 <body>
     <#if user?? && (user?size > 0)>
-        <table>
+        <table id="table">
             <thead>
                 <tr>
                     <td>用户编号</td>
@@ -20,8 +20,10 @@
                 </#list>
             </tbody>
         </table>
+        <#elseif (user?size == 0)>
+            <h1>No User,${name}-${id}</h1>
         <#else>
-            <center><h1>暂无</h1></center>
+            <center><h1>暂无${id}</h1></center>
     </#if>
 </body>
 </html>
